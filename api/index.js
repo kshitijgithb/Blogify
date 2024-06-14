@@ -41,7 +41,7 @@ app.use('/api/comment', commentRoutes);
 
 app.use(express.static(path.join(__dirname, '/client/dist')));
 
-// app.use(cors({ origin: 'http://127.0.0.1:5174', credentials: true }));
+app.use(cors({ origin: 'http://127.0.0.1:5173', credentials: true }));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
 });
