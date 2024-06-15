@@ -4,12 +4,12 @@ export default function About() {
       <div className='max-w-2xl mx-auto p-3 text-center'>
         <div>
           <h1 className='text-3xl font font-semibold text-center my-7'>
-            About Kshitij's Blog
+            About TechInsight
           </h1>
           <div className='text-md text-gray-500 flex flex-col gap-6'>
             <p>
-              Welcome to Kshitij's Blog! This blog was created by Kshitij
-              as a personal project to share his thoughts and ideas with the
+              Welcome to TechInsight. This blog is created by me
+               to share my thoughts and ideas with the
               world. I am a passionate developer who loves to write about
               technology, coding, and everything in between.
             </p>

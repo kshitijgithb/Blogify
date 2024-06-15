@@ -86,7 +86,7 @@ export default function UpdatePost() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(`/api/post/updatepost/${formData._id}/${currentUser._id}`, {
+      const res = await fetch(`/api/post/updatepost/${postId}/${currentUser._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -133,6 +133,11 @@ export default function UpdatePost() {
             <option value='javascript'>JavaScript</option>
             <option value='reactjs'>React.js</option>
             <option value='nextjs'>Next.js</option>
+            <option value='DBMS'>DBMS</option>
+            <option value='Opersating System'>Operating System</option>
+            <option value='System Design'>System Design</option>
+            <option value='Data Structure and Algorithms'>Data Structure and Algorithms</option>
+            <option value='Object Oriented programming'>Object Oriented programming</option>
           </Select>
         </div>
         <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
